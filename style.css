@@ -1,0 +1,82 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.container
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+}
+
+.background
+{
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground
+{
+    transform: translateZ(-20px) scale(3);
+}
+
+.background, .foreground
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h1
+{
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 4px;
+    font-size: 10rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.3);
+}
+
+section
+{
+    background-color: slategray;
+    color: white;
+}
+
+.sec-heading
+{
+    font-size: 5rem;
+    margin: 0 5rem;
+}
+
+.bg
+{
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.adventure-1
+{
+    background-image: url(./rafting.jpeg);
+}
