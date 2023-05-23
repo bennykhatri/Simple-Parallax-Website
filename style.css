@@ -14,13 +14,13 @@
 
 .container
 {
-    height: 100%;
-    width: 100%;
-    display: flex;
     position: relative;
+    height: 100%;
+    display: flex;
     transform-style: preserve-3d;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 }
 
 .background
@@ -52,31 +52,63 @@ h1
     font-size: 10rem;
     color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.3);
+    text-transform: uppercase;
 }
 
 section
 {
-    background-color: slategray;
+    background-color: rgb(45, 45, 45);
     color: white;
 }
-
-.sec-heading
+.secHeading
 {
     font-size: 5rem;
-    margin: 0 5rem;
+    padding: 2rem 5rem;
+}
+
+.text
+{
+    font-size: 1rem;
+    padding: 2rem 5rem;
 }
 
 .bg
 {
-    height: 500px;
+    position: relative;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    height: 300px;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.adventure-1
+.desc
+{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    color: black;
+    transform: translateX(-50%) translateX(-10%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.bg1
 {
     background-image: url(./rafting.jpeg);
+}
+
+.bg2
+{
+    background-image: url(./sky_jumping.jpeg);
+}
+
+.bg3
+{
+    background-image: url(./biking.jpeg);
 }
